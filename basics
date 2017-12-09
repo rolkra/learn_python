@@ -50,3 +50,16 @@ cars = pd.read_csv("cars.csv")
 
 # Print out cars
 print(cars)
+
+
+### select columns
+
+# Print out country column as Pandas Series
+cars["country"]
+
+# Print out country column as Pandas DataFrame
+cars[["country"]]
+
+# Print out DataFrame with country and drives_right columns
+cars[["country", "drives_right"]]
+
