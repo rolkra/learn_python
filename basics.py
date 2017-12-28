@@ -25,12 +25,12 @@ type("hello")
 # Exponent
 2 ** 2    # 2^2
 
-# logical operator
+# boolean operator
 True and True
 True or False
 not False
 
-# logical operator for np.array
+# boolean operator for np.array
 a = np.array([1,2,3,4,5])
 b = np.array([5,4,3,2,1])
 np.logical_and(a < 4, b < 4)
