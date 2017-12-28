@@ -15,17 +15,27 @@ type("hello")
 # Operators
 ################################################################################
 
-True and True
-True or False
-not False
-
+# comparsion operator
 1 >= 0
 0 <= 1
 1 == 1
 1 != 0
 1 <> 0
 
+# Exponent
 2 ** 2    # 2^2
+
+# logical operator
+True and True
+True or False
+not False
+
+# logical operator for np.array
+a = np.array([1,2,3,4,5])
+b = np.array([5,4,3,2,1])
+np.logical_and(a < 4, b < 4)
+np.logical_or(a < 4, b < 4)
+
 
 ################################################################################
 # Dictionary (key - value pairs, keys need to be unique)
