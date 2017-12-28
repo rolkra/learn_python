@@ -40,6 +40,7 @@ np.logical_or(a < 4, b < 4)
 # Control flow
 ################################################################################
 
+# if, elif, else
 a = 10
 if a > 10 :
     print("a > 10")
@@ -52,6 +53,20 @@ a = 10
 b = True if a == 10 else False
 print(b)
 
+# while
+a = 5
+while a > 0 :
+    print(a)
+    a = a - 1
+
+# for
+a = [1,2,3,4,5]
+for i in a :
+    print(i)
+    
+a = [1,2,3,4,5]
+for index, element in enumerate(a) :
+    print("nr " + str(index) + " = " + str(element))
           
 ################################################################################
 # Dictionary (key - value pairs, keys need to be unique)
