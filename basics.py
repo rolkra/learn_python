@@ -49,9 +49,8 @@ else :
     print("a < 5")
 
 a = 10
-if   a > 10 : print("a > 10")
-elif a >= 5 : print("a between 5 and 10")
-else :        print("a < 5")
+b = True if a == 10 else False
+print(b)
 
           
 ################################################################################
