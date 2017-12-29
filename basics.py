@@ -73,7 +73,16 @@ europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn',
           'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'australia':'vienna' }
 for country, capital in europe.items() :
     print("the capital of ", country, " is ", capital)
-          
+        
+################################################################################
+# String
+################################################################################
+        
+a = "Hello World"
+a.upper()
+a.lower()
+len(a)
+
 ################################################################################
 # Dictionary (key - value pairs, keys need to be unique)
 ################################################################################
