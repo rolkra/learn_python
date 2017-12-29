@@ -67,6 +67,12 @@ for i in a :
 a = [1,2,3,4,5]
 for index, element in enumerate(a) :
     print("nr " + str(index) + " = " + str(element))
+    
+# for (dictionary)
+europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn', 
+          'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'australia':'vienna' }
+for country, capital in europe.items() :
+    print("the capital of ", country, " is ", capital)
           
 ################################################################################
 # Dictionary (key - value pairs, keys need to be unique)
