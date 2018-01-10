@@ -75,6 +75,15 @@ for country, capital in europe.items() :
     print("the capital of ", country, " is ", capital)
         
 ################################################################################
+# Function
+################################################################################
+
+def double(x):
+    return x*2
+
+double(2)
+
+################################################################################
 # String
 ################################################################################
         
@@ -178,5 +187,3 @@ print(cars.loc[:,['drives_right']])
 
 # Print out cars_per_cap and drives_right as DataFrame
 print(cars.loc[:,['cars_per_cap','drives_right']])
-
-
