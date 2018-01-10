@@ -105,6 +105,9 @@ europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn',
 # Update capital of germany
 europe["germany"] = "berlin"
 
+# New element
+europe["hungary"] = "budapest"
+
 # Remove australia
 del(europe["australia"])
 
