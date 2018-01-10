@@ -79,6 +79,7 @@ for country, capital in europe.items() :
 ################################################################################
 
 def double(x):
+    """doubles x"""
     return x*2
 
 double(2)
