@@ -96,6 +96,15 @@ print(name)
 change_name()
 print(name)
 
+# inner function (function inside a function)
+def three_shouts(word1, word2, word3):
+    """Returns a tuple of strings concatenated with '!!!'."""
+    def inner(word):
+        """Returns a string concatenated with '!!!'."""
+        return word + '!!!'
+    return (inner(word1), inner(word2), inner(word3))
+print(three_shouts('a', 'b', 'c'))
+
 ################################################################################
 # String
 ################################################################################
