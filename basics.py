@@ -105,6 +105,17 @@ def three_shouts(word1, word2, word3):
     return (inner(word1), inner(word2), inner(word3))
 print(three_shouts('a', 'b', 'c'))
 
+# nonlocal scope
+def name(x):
+    name = x
+    def upper_name():
+        nonlocal name   # uses scope outside a inner function 
+        name = name.upper()
+        return name
+    return upper_name()
+    
+name('roland')
+
 # return a function & closure (function remembers the state of its enclosing scope when called)
 def echo(n):
     """Return the inner_echo function."""
