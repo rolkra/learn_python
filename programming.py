@@ -1,4 +1,67 @@
 ################################################################################
+# Operators
+################################################################################
+
+# comparsion operator
+1 >= 0
+0 <= 1
+1 == 1
+1 != 0
+1 <> 0
+
+# Exponent
+2 ** 2    # 2^2
+
+# boolean operator
+True and True
+True or False
+not False
+
+# boolean operator for np.array
+a = np.array([1,2,3,4,5])
+b = np.array([5,4,3,2,1])
+np.logical_and(a < 4, b < 4)
+np.logical_or(a < 4, b < 4)
+
+################################################################################
+# Control flow
+################################################################################
+
+# if, elif, else
+a = 10
+if a > 10 :
+    print("a > 10")
+elif a >= 5 :
+    print("a between 5 and 10")
+else :
+    print("a < 5")
+
+a = 10
+b = True if a == 10 else False
+print(b)
+
+# while
+a = 5
+while a > 0 :
+    print(a)
+    a = a - 1
+
+# for
+a = [1,2,3,4,5]
+for i in a :
+    print(i)
+    
+a = [1,2,3,4,5]
+for index, element in enumerate(a) :
+    print("nr " + str(index) + " = " + str(element))
+    
+# for (dictionary)
+europe = {'spain':'madrid', 'france':'paris', 'germany':'bonn', 
+          'norway':'oslo', 'italy':'rome', 'poland':'warsaw', 'australia':'vienna' }
+for country, capital in europe.items() :
+    print("the capital of ", country, " is ", capital)
+
+################################################################################
 # Function & Scope
 ################################################################################
 
