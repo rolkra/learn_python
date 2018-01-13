@@ -75,14 +75,26 @@ for country, capital in europe.items() :
     print("the capital of ", country, " is ", capital)
         
 ################################################################################
-# Function
+# Function & Scope
 ################################################################################
 
+# define a function
 def double(x):
     """doubles x"""
     return x*2
 
 double(2)
+
+# global scope
+name = "bruce"
+
+def change_name() :
+    global name
+    name = "rick"
+
+print(name)
+change_name()
+print(name)
 
 ################################################################################
 # String
