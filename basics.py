@@ -105,6 +105,22 @@ def three_shouts(word1, word2, word3):
     return (inner(word1), inner(word2), inner(word3))
 print(three_shouts('a', 'b', 'c'))
 
+# return a function & closure (function remembers the state of its enclosing scope when called)
+def echo(n):
+    """Return the inner_echo function."""
+    
+    def inner_echo(word1):
+        """Concatenate n copies of word1."""
+        echo_word = word1 * n
+        return echo_word
+
+    return inner_echo  # return a function
+
+twice = echo(2)    # remembers n = 2
+thrice = echo(3)   # remembers n = 3
+
+print(twice('hello'), thrice('hello'))  
+
 ################################################################################
 # String
 ################################################################################
