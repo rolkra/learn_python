@@ -148,6 +148,10 @@ def report_status(**kwargs):
         print(key + ": " + value)
 report_status(name="luke", affiliation="jedi", status="missing")
 
+# lambda function (anonymous function)
+double = (lambda x: x * 2)
+double(1)
+
 ################################################################################
 # String
 ################################################################################
