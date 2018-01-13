@@ -156,6 +156,7 @@ double(1)
 # Error Handling
 ################################################################################
 
+# try except
 def square(x):
     try:
         y = x ** 2
@@ -165,6 +166,10 @@ def square(x):
     
 square(2)
 square("hello world")
+
+# raise an error message
+if x < 0:
+    raise ValueError("echo must be greater than 0")
 
 ################################################################################
 # String
