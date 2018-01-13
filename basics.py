@@ -132,6 +132,22 @@ thrice = echo(3)   # remembers n = 3
 
 print(twice('hello'), thrice('hello'))  
 
+# flexible arguments
+def sum_all(*args):
+    tmp = 0
+    for val in args: 
+        tmp += val
+    return(tmp)
+    
+sum_all(1,2,3,4,5)
+
+# keywords arguments
+def report_status(**kwargs):
+    """Print out the status of a movie character."""
+    for key, value in kwargs.items():
+        print(key + ": " + value)
+report_status(name="luke", affiliation="jedi", status="missing")
+
 ################################################################################
 # String
 ################################################################################
