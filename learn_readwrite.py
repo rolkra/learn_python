@@ -57,3 +57,15 @@ import pandas as pd
 file = 'import.xlsx'
 xl = pd.ExcelFile(file)
 print(xl.sheet_names)
+df1 = xl.parse('sheet1')     # import sheet1 as a pandas dataframe
+print(df1.head())
+
+################################################################################
+# read SAS file
+################################################################################
+
+from sas7bdat import SAS7BDAT
+with SAS7BDAT('import.sas7bdat') as file:
+    df_sas = file.to_data_frame()
+print(df_sas.head)
+
