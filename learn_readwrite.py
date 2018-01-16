@@ -30,3 +30,6 @@ df.head()
 
 # no header, first 5 rows
 data = pd.read_csv(file, nrows=5, header=None)
+
+# tab seperated, comment, na values
+data = pd.read_csv(file, sep='\t', comment='#', na_values=['NA', 'NaN'])
