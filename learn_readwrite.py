@@ -41,3 +41,19 @@ data = pd.read_csv(file, nrows=5, header=None)
 
 # tab seperated, comment, na values
 data = pd.read_csv(file, sep='\t', comment='#', na_values=['NULL', '?'])
+
+################################################################################
+# pickle (binary data)
+################################################################################
+
+with open('data.pkl', 'rb') as file:
+    d = pickle.load(file)
+
+################################################################################
+# read excel file
+################################################################################
+
+import pandas as pd
+file = 'import.xlsx'
+xl = pd.ExcelFile(file)
+print(xl.sheet_names)
