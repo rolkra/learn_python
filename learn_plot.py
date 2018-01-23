@@ -13,6 +13,7 @@ data = pd.DataFrame({'age': age, 'gender': gender, 'churn': churn})
 
 # histogram 
 data['age'].plot(kind='hist', title="age", bins=5)
+plt.hist(data['age'].dropna())    # na in hist throws an error
 
 # barchart
 data['gender'].value_counts().plot(kind='barh', title="gender")
