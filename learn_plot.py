@@ -10,7 +10,7 @@ age = [18,18,20,23,21,19,19,19,22,22]
 gender = ["M","M","F","M","M","F","F","F","F","M"]
 weight = [55,65,82,71,69,86,62,75,80,72]
 churn = [True, True, False, False, False, False, True, False, False, True]
-data = pd.DataFrame({'age': age, 'gender': gender, 'churn': churn})
+data = pd.DataFrame({'age': age, 'gender': gender, 'weight': weight, 'churn': churn})
 
 # histogram 
 data['age'].plot(kind='hist', title="age", bins=5)
