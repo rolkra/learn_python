@@ -5,7 +5,16 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# histogram
-age = [18,18,20,23,21,19,19,19,22,22,19,20,24,23,20,20,21]
-data = pd.DataFrame({'age': age})
+# create dataframe
+age = [18,18,20,23,21,19,19,19,22,22]
+gender = ["M","M","F","M","M","F","F","F","F","M"]
+churn = [True, True, False, False, False, False, True, False, False, True]
+data = pd.DataFrame({'age': age, 'gender': gender, 'churn': churn})
+
+# histogram 
 data['age'].plot(kind='hist', title="age", bins=5)
+
+# barchart
+data['gender'].value_counts().plot(kind='barh', title="gender")
+data['churn'].value_counts().plot(kind='barh', title="churn")
+
