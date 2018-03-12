@@ -33,6 +33,9 @@ cars = pd.read_csv("cars.csv")
 # Print out cars
 print(cars)
 
+# import data with tab as seperator and "?" as na value
+data = pd.read_csv("data.csv", sep = "\t", na_values = ["?"])
+
 ################################################################################
 # Select columns
 ################################################################################
