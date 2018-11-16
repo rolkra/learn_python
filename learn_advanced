@@ -1,0 +1,9 @@
+################################################################################
+# connect to database and enter passwort
+################################################################################
+
+import pyodbc
+import getpass
+
+pw = getpass.getpass(prompt='Enter your password: ')
+cn = pyodbc.connect('DSN=Cloudera2;UID=user;PWD=' + pw + '')
